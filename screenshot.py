@@ -1,6 +1,4 @@
-from PIL import image 
-import pyscreenshot as ImageGrab
+from PIL import Image # Notice the 'from PIL' at the start of the line
 
-image = ImageGrab.grab()
-
-image.save("C:/Users/Duc/Downloads/Screenshot")
+im = Image.new("RGB", (200, 30), "#ddd")
+im.save("C:\\Users\\Duc\\Downloads\\image.png")
